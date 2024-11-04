@@ -1,0 +1,488 @@
+
+.body{
+    background-color:azure;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+   
+
+
+
+}
+.footer{
+    bottom: 0px;
+    right:auto;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: right;
+    position: relative;
+}
+.login {
+    background-color: rgb(148, 176, 236);
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(178, 213, 249, 0.1);
+    width: 100%; 
+    max-width: 400px; 
+    margin: 0 auto; 
+    text-align: center;
+    gap: 10px;
+    border: 1px solid whitesmoke;
+   
+}
+
+
+.login p {
+    color: #ccc;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+
+.login label {
+    font-size: 20px;
+    color: white;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.login input[type="email"],
+.login input[type="text"],
+.login input[type="password"] {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font: size 20px;
+}
+
+.login input[type="button"] {
+    font-size: 15px;
+    width: 50%;
+    text-align: bottom;
+    color: white;
+    background-color: #3276ba;
+    border: 1px solid black;
+    padding: 10px ;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  
+    
+}
+
+.login input[type="button"]:hover {
+    background-color: #e0cab4;
+}
+#account {
+    margin-bottom: auto;
+}
+
+#account a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-bottom:auto;
+    padding:20px;
+    background-color: #efe3e3;
+    font-size: 20px;
+}
+
+.aside{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+
+.sidebar{
+    width:250px;
+    height: 100vh;
+    background-color: #f8f8f8;
+    padding:30px;
+    box-sizing: border-box;
+    border-right: 1px solid#ddd;
+    position: fixed;
+    flex-direction: column;
+    top:0;
+    left:0;
+   
+
+}
+.sidebar nav a{
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.sidebar nav a:hover {background-color:#e0e0e0;
+
+}
+
+.main{
+    margin-left: 250px; 
+    padding: 20px;
+    flex: 1; 
+    box-sizing: border-box;
+}
+.top{
+    display: flex;
+    justify-content: space-evenly;
+    gap:10px;
+    margin-top: 20px;
+
+}
+.top div{
+    flex:1;
+    max-width: 600px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+.top img{
+    width:100%;
+    height: auto;
+    object-fit: cover; 
+   
+}
+
+.top p{
+    padding: 10px;
+    background-color:#315b86;
+    color:azure;
+    height: auto;
+    margin:0;
+    flex-grow: 1;
+    display: flex;
+    font-weight: bold;
+}
+.top button {
+    padding: 5px;
+    background-color: #3276ba;
+    border: none;
+    border-radius: 0 0 5px 5px; 
+    cursor: pointer;
+    width: 100%; 
+    font-size: 16px;
+    align-self: flex-end;
+   
+}
+.top button:hover {
+    background-color: #20558b;
+}
+.slidercontainer {
+    position: relative;
+    width: 500px; 
+    margin: auto;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#sliderimage {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.item {
+    min-width: 100%; 
+    height: 100%;
+   
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.prev, .next {
+    background-color: #20558b;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    border-radius: 5px;
+    
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+}
+
+.prev {
+    left: -70px; 
+   
+ 
+    
+}
+
+.next {
+    right: -70px;
+    top:0px 
+    
+ 
+   
+    
+}
+
+.others{
+   
+    justify-content: space-evenly;
+    gap:20px;
+    margin-top: 20px;
+
+
+}
+.otherscontent h3{
+    margin-bottom: 20px;
+font-weight: bold;
+color: #333;
+font-size: 20px;
+
+
+}
+.othersitem{
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+}
+.othersitem a{
+    flex: 0 0 auto;
+    margin-right: 15px;
+
+}
+.otheritem img {
+    width: 200px;
+    height: 112px;
+    object-fit: cover;
+}
+.otherscontent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.otherscontent h3{
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    color: #000;
+}
+
+.otherscontent p{
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    align-self: flex-end;
+}
+
+.topcomments, .Allcomments{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+    padding: 25px;
+}
+.comments{
+    background-color: #fff;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 25px;
+   
+    margin-bottom: 25px;
+}
+#commentform {
+  width:100%
+    
+}
+#commentform input, #commentform textarea {
+    width:100%;
+    margin-bottom: 15px;
+    padding:10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#commentform input[type="button"] {
+    background-color: #7184d1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: auto;
+    text-align: center;
+}
+#remaining {
+    margin-top: 10px;
+    font-style: italic;
+}
+.entry{
+    border-bottom: 1px soild #eee;
+    padding: 15px 0;
+}
+.entry img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+.entry button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.description h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description p {
+    color: #666;
+}
+
+.rank, .Games {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#Ranking {
+    padding-left: 20px;
+}
+
+#Ranking li {
+    margin-bottom: 10px;
+}
+
+.game {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.game h3 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.game img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.game p {
+    color: #1b1b1b;
+    font-weight: bold;
+    margin-bottom: 15px;
+    width: 500px;
+    height: 160px;
+}
+
+select, button {
+    padding: 8px 12px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3367d6;
+}
+#Filecontainer {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.Mods {
+    background-color: #fff;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 25px;
+   
+    margin-bottom: 25px;
+}
+
+#Modsform {
+  width: 100%;
+}
+
+#Modsform label {
+    margin-top: 10px;
+    color: #555;
+}
+
+#Modsform input[type="text"],
+#Modsform input[type="textarea"],
+#Modsform input[type="file"] {
+    width:100%;
+    margin-bottom: 15px;
+    padding:10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#Modsform input[type="button"] {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#Modsform input[type="button"]:hover {
+    background-color: #3367d6;
+}
+
+
+
