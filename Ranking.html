@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Personal Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkLogin()">
+    <!--header-->
+    <div class="header">
+        <aside class="sidebar">
+        <nav>
+            <a href="Home.html">Home</a><br><br>
+            <a href="Community.html">Community</a><br><br>
+            <a href="Ranking.html">Rank</a><br><br>
+            <a href="WorkShop.html">WorkShop</a><br><br>
+        </nav>
+   
+        <div id="account">
+            <a href="Login.html">Login</a><br>
+            <a href="javascript:void(0);" onclick="logout()">Logout</a><br>
+            <a href="Register.html">Register</a><br><br>
+        </div>
+    </aside>
+    </div>
+    <div class="main">
+    <div class="description">
+        <h1>Rank in Site</h1>
+        <p>Vote your liked Games!!</p>
+
+    </div>
+
+    <div class="rank">
+   <h2>Top 5 Games</h2>
+ 
+  <ol id="Ranking"></ol>
+  <button onclick="resetScores()">Reset</button>
+</div>
+
+
+
+
+   <div class="Games">
+    <h2>Popular Games in 2024!</h2>
+    <div class="game">
+        <h3>Elden Ring: Shadow of the Erdtree</h3>
+        <img src="https://www.gamespot.com/a/uploads/scale_super/1601/16018044/4320164-elden-ring-erdtree.jpg"alt="EldenRing">
+        <p>Completing the grand story of Elden Ring, the expansion injects new gameplay content, even tougher boss battles, and more awe-inspiring locations into an already superb game.</p>
+            <select id="scoreForm1" >
+                <option value="">Select a score</option>
+                <option value="1">Score:One</option>
+                <option value="2">Score:Two</option>
+                <option value="3">Score:Three</option>
+                <option value="4">Score:Four</option>
+                <option value="5">Score:Five</option>
+
+            </select>
+            <button onclick="submitScore(1)">Submit Score</button>
+    </div>
+    <div class="game">
+        <h3>Destiny 2: The Final Shape</h3>
+        <img src="https://www.gamespot.com/a/uploads/scale_super/1601/16018044/4316430-salvation%27s-edge.jpg"alt="Destiny 2: The Final Shape -- 9">
+        <p> There was a lot of pressure on Bungie to deliver a satisfying conclusion to Destiny's Light and Darkness Saga, but The Final Shape didn't just live up to those expectations, it stuck the landing with style. A thrilling story, impactful gameplay changes, and a finale that united its community helped push Destiny 2 to new heights.</p>
+        <select id="scoreForm2" >
+            <option value="">Select a score</option>
+            <option value="1">Score:One</option>
+            <option value="2">Score:Two</option>
+            <option value="3">Score:Three</option>
+            <option value="4">Score:Four</option>
+            <option value="5">Score:Five</option>
+
+        </select>
+        <button onclick="submitScore(2)">Submit Score</button>
+    </div>
+    <div class="game">
+        <h3>Dragon's Dogma 2</h3>
+        <img src="https://www.gamespot.com/a/uploads/scale_super/1601/16018044/4278737-dragons-dogma-2.jpg"alt="Dragon's Dogma 2">
+        <p>12 years after the first game came out, Dragon's Dogma 2 builds on the best parts of that sweeping fantasy tale to deliver a magical open-world RPG. It might not be the most innovative sequel, but those core strengths are enhanced by emergent moments, technological leaps, and varied gameplay to create a thrilling sense of adventure.</p>
+        <select id="scoreForm3" >
+            <option value="">Select a score</option>
+            <option value="1">Score:One</option>
+            <option value="2">Score:Two</option>
+            <option value="3">Score:Three</option>
+            <option value="4">Score:Four</option>
+            <option value="5">Score:Five</option>
+
+        </select>
+        <button onclick="submitScore(3)">Submit Score</button>
+    </div>
+    <div class="game">
+        <h3>Helldivers 2</h3>
+        <img src="https://www.gamespot.com/a/uploads/scale_super/1601/16018044/4260027-helldivers-2.jpg"alt="Helldivers 2">
+        <p>Switching from a top-down twin-stick shooter design to a third-person perspective, Helldivers 2 is an action-packed adventure across alien planets. In a crowded live-service environment, developer Arrowhead has delivered a fun romp that's best enjoyed with friends, enhanced by satisfying gunplay, and feels constantly fresh thanks to some clever design.</p>
+        <select id="scoreForm4" >
+            <option value="">Select a score</option>
+            <option value="1">Score:One</option>
+            <option value="2">Score:Two</option>
+            <option value="3">Score:Three</option>
+            <option value="4">Score:Four</option>
+            <option value="5">Score:Five</option>
+
+        </select>
+        <button onclick="submitScore(4)">Submit Score</button>
+    </div>
+    <div class="game">
+        <h3>Final Fantasy 7 Rebirth</h3>
+        <img src="https://www.gamespot.com/a/uploads/scale_super/1601/16018044/4262381-ff7-rebirth-aerith.jpg"alt="Final Fantasy 7 Rebirth">
+        <p>Final Fantasy 7 Rebirth is a blockbuster of a sequel, a bigger and bolder return of Cloud and friends as they continue to defy destiny. While the game makes a few fumbles, they don't detract from the new chapter's impressive visuals, finely honed combat, and exciting deviations from the established series lore.</p>
+        <select id="scoreForm5">
+            <option value="">Select a score</option>
+            <option value="1">Score:One</option>
+            <option value="2">Score:One</option>
+            <option value="3">Score:One</option>
+            <option value="4">Score:One</option>
+            <option value="5">Score:One</option>
+
+        </select>
+        <button onclick="submitScore(5)">Submit Score</button>
+        </div>
+   </div>
+   </div>
+   
+
+    <script src="script.js"></script>
+</body>
+<div class="footer">
+    <p>&copy; 2024 Dexin Li. Itec3020.</p>
+   
+</div> 
+
+</html>
