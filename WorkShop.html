@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Personal Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkLogin()">
+    <!--header-->
+    <div class="header">
+        <aside class="sidebar">
+        <nav>
+            <a href="Home.html">Home</a><br><br>
+            <a href="Community.html">Community</a><br><br>
+            <a href="Ranking.html">Rank</a><br><br>
+            <a href="WorkShop.html">WorkShop</a><br><br>
+        </nav>
+   
+        <div id="account">
+            <a href="Login.html">Login</a><br>
+            <a href="javascript:void(0);" onclick="logout()">Logout</a><br>
+            <a href="Register.html">Register</a><br><br>
+        </div>
+    </aside>
+    </div>
+    <div class="main">
+    <h1>ModsHere!</h1>
+    <div id="Filecontainer"></div>
+
+
+    <div class="Mods">
+        <form id="Modsform">
+            <h2>Share your Mods Here!</h2>
+            <label for="title">Title:</label><br>
+            <input type="text"id="title"name="title"placeholder="Enter your Title:"required><br><br><br>
+            <label for="description">Description:</label><br>
+            <input type="textarea"id="description"name="description"placeholder="description:"required><br><br>
+            <label for ="file">files:</label><br>
+            <input type="file" id="file" accept=".txt,.jpg,.jpeg,.png,.mod">
+            <input type="button" id="Upload"value="Upload"onclick="uploadMods()">
+            
+        </form>
+    </div>
+    </div>
+
+</body>
+<div class="footer">
+    <p>&copy; 2024 Dexin Li. Itec3020.</p>
+   
+</div> 
+
+<script src="script.js"></script>
