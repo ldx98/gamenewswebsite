@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Personal Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="checkLogin(); initializeComments();">
+    <!--header-->
+    <div class="header">
+        <aside class="sidebar">
+            <nav>
+                <a href="Home.html">Home</a><br><br>
+                <a href="Community.html">Community</a><br><br>
+                <a href="Ranking.html">Rank</a><br><br>
+                <a href="WorkShop.html">WorkShop</a><br><br>
+            </nav>
+            <div id="account">
+                <a href="Login.html">Login</a><br>
+            <a href="javascript:void(0);" onclick="logout()">Logout</a><br>
+                <a href="Register.html">Register</a><br><br>
+            </div>
+        </aside>
+    </div>
+    <div class="main">
+        <div class="description">
+            <h1>Welcome to the Community!!</h1>
+            <p>Popular Comments Here!</p>
+            <div class="topcomments"></div> 
+           
+          
+           
+        </div>
+        <div class="Allcomments">
+            <h2>All Comments</h2>
+
+        <div id="CommentsContainer"></div>
+        </div>
+
+
+    <div class="comments">
+        <h2>Share your thoughts!!</h2>
+        <form id="commentform">
+            <label for="title">Title:</label><br>
+            <input type="text"id="title"name="title"placeholder="Enter your Title:"required><br><br>
+            <label for="Comment">Comment:</label><br>
+            <input type="textarea"id="Comment"name="Comment"placeholder="Comment:"required><br><br>
+            <label for ="image">Images</label><br>
+            <input type="url"id="image"><br><br>
+            <input type="button" id="Upload"value="Upload"onclick="uploadComments()">
+            <div id="remaining">
+                You have <span id="remaininglikes">10</span> likes remaining.
+            </div>
+        </form>
+    </div>
+    </div>
+    
+<div class="footer">
+    <p>&copy; 2024 Dexin Li. Itec3020.</p>
+   
+</div> 
+
+
+
+
+    <script src="script.js"></script>
+    </body>
